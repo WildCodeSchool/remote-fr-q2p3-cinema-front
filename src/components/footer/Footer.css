@@ -11,6 +11,8 @@
     display: flex;
     justify-content:center;
     margin-bottom: 2%;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
 }
 
 .footer-columns-container {
@@ -56,13 +58,4 @@ ul {
     font-size: 80%;
 }
 
-.greetings-footer li {
-    display: inline-block;
-    margin-left: 6px;
-    margin-right: 6px;
-}
 
-.footer-logo {
-    margin-bottom: 1%;
-    margin-top: 1.5%;
-}
