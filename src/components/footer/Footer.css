@@ -2,9 +2,8 @@
     background-color: rgb(61, 61, 61);
     color: white;
     bottom: 0;
-    position: fixed;
-    background-repeat: no-repeat;
     width: 100%;
+    position:absolute;
 }
 
 .footer-logo {
@@ -54,8 +53,16 @@ ul {
     margin-top: 3%;
     display: flex;
     justify-content: center;
-    margin-bottom: 2%;
     font-size: 80%;
+    text-align : center;
 }
+
+.greetings-footer li {
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
 
 
