@@ -13,6 +13,12 @@
     cursor: pointer;
     margin: 0 5px;
 }
+.carousel .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+}
 
 .carousel .overlay {
     width: 80%;
