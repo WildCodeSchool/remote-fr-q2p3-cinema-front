@@ -1,14 +1,35 @@
 import React from "react";
 import Slider from "react-slick";
 import image1 from '../../images/1.jpg'
-import image3 from '../../images/3.jpg';
+import image2 from '../../images/2.jpg';
+import image4 from '../../images/4.jpg';
 import image5 from '../../images/5.jpg';
-import image6 from '../../images/6.jpg';
-import image7 from '../../images/7.jpg';
-import image9 from '../../images/9.jpg';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './Slider.css';
+
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "grey" }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}jk
+      style={{ ...style, display: "block", background: "grey" }}
+      onClick={onClick}
+    />
+  );
+}
 
 function Sliders() {
 
@@ -19,31 +40,30 @@ function Sliders() {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 6500,
-      pauseOnHover: true
+      pauseOnHover: true,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />
     };
     return (
 
-      <div>
+      <div className="Slider">
         <div className="image-container-carousel">
+        <h2 className="text-slider">
+            Hello
+            </h2>
         <Slider {...settings}>
-          <div>
-          <img className="image" alt='image1' src={image1} />
+          <div className="slide">
+          <img className="image" alt='image1' src={image1}/>
           </div>
-          <div>
-          <img className="image" alt='image3' src={image3} />
+          <div className="slide">
+          <img className="image" alt='image2' src={image2} />
           </div>
-          <div>
+          <div className="slide">
+          <img className="image" alt='image4' src={image4} />
+          </div>
+          <div className="slide">
           <img className="image" alt='image5' src={image5} />
-          </div>
-          <div>
-          <img className="image" alt='image6' src={image6} />
-          </div>
-          <div>
-          <img className="image" alt='image7' src={image7} />
           </div>   
-          <div>
-          <img className="image" alt='image9' src={image9} />
-          </div>
         </Slider>
         </div>
       </div>

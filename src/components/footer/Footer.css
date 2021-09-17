@@ -3,7 +3,6 @@
     color: white;
     bottom: 0;
     width: 100%;
-    position:absolute;
 }
 
 .footer-logo {
@@ -61,6 +60,7 @@ ul {
     display: inline-block;
     margin-left: 6px;
     margin-right: 6px;
+    margin-bottom: 2%;
 }
 
 
