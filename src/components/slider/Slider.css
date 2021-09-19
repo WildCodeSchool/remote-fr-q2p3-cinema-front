@@ -1,0 +1,72 @@
+.image {
+    height:40vh;
+    width: 100vw; 
+    margin-top: 1%;
+    object-fit: cover;
+}
+
+.image-container-carousel {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.slick-prev:before {
+    color: white !important;
+    background-color: grey;
+}
+  .slick-next:before{
+    color: white !important;
+    background-color: grey;
+}
+.text-slider {
+    color : black;
+    position : fixed;
+    height: 100%;
+}
+@media only screen and (max-width:1024px) {
+    
+.image {
+    height:20vh;
+    width: 80vw;
+    object-fit: cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+.slick-prev:before {
+    color: white !important;
+    background-color: grey;
+    margin-left: 50px;
+}
+.slick-next:before{
+    color: white !important;
+    background-color: grey;
+    margin-left: -50px;
+}
+}
+
+@media only screen and (max-width:375px) {
+    .image {
+        height:20vh;
+        width: 80vw;
+        object-fit: cover;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .slick-prev:before {
+        color: white !important;
+        background-color: grey;
+        margin-left: 30px;
+    }
+    .slick-next:before{
+        color: white !important;
+        background-color: grey;
+        margin-left: -30px;
+    }  
+} 
+
+        
+      
+      
+    
+
+

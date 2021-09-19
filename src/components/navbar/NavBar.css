@@ -1,0 +1,106 @@
+.NavBar{
+    display: flex;
+    width:100vw;
+}
+
+.navigation-bar{
+    display:flex ;
+    flex-direction: row;
+    width:90vw;
+    height:10vh;
+    background:black;
+    text-align: center;
+}
+.navigation-logo{
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+}
+.n-logo{
+    width:70%;
+    margin-left: 16%;
+    padding: 2%;
+    text-align: center;
+    object-fit: cover;
+}
+.navigation-link{
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    font-size: 23px;
+    text-decoration: none;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.separation{
+    border:1px solid white;
+    height: 6vh;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media only screen and (max-width:1024px) {
+
+    .navigation-bar{
+        display:flex ;
+        flex-direction: row;
+        width:90vw;
+        height:6vh;
+        background:black;
+        text-align: center;
+    }
+
+    .n-logo{
+        width: 70%;
+        margin-left: 16%;
+        padding: 2%;
+        text-align: center;
+        object-fit: cover;
+    }
+
+    .separation{
+        border:1px solid white;
+        height: 3vh;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;}
+    }
+    @media only screen and (max-width:375px) {
+       
+        .NavBar{
+            display: flex;
+            flex-direction: column; 
+            width:100vw;
+        }
+    
+       .n-logo{
+            width:55%;
+            object-fit: cover;
+        }
+        .navigation-logo{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+       
+       .navigation-bar{
+            width: 100%;
+            text-align: center;
+            margin-left: 2%;
+        }
+        .navigation-link{
+            color:white;
+            font-size: 10px;
+            text-align: center;
+        }
+        .separation{
+            border: 1px solid white ;
+            height: 2vh;
+            margin-top: auto;
+            margin-bottom: auto;
+        } 
+    }

@@ -1,0 +1,130 @@
+.Footer {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2%;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+}
+
+.footer-columns-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-right: 2%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-main-title {
+   margin-bottom: 8%;
+   font-weight: bold;
+   font-size: 90%;
+}
+
+.footer-title {
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+.footer-useful-links li, .footer-text li, .footer-contact-text li {
+    margin-bottom: 2%;
+}
+
+.footer-contact-button {
+    border: solid 2px white;
+    padding: 8%;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top : 14%;
+}
+
+.greetings-footer {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+    text-align : center;
+}
+
+.greetings-footer li {
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width:1024px) {}
+
+.Footer {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    margin-top: 250px;
+    width: 100vw;
+    margin-top: 400px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content:center;
+}
+
+.footer-columns-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin-right: 2%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.footer-main-title {
+   margin-bottom: 8%;
+   font-weight: bold;
+   font-size: 90%;
+}
+
+.footer-title {
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+
+.footer-useful-links li, .footer-text li, .footer-contact-text li {
+    margin-bottom: 2%;
+}
+
+.footer-contact-button {
+    border: solid 2px white;
+    padding: 8%;
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top : 14%;
+}
+
+.greetings-footer {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    font-size: 80%;
+    text-align : center;
+}
+
+.greetings-footer li {
+    display: inline-block;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 2%;
+}
+
