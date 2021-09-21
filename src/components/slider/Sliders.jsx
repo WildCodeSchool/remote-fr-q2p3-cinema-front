@@ -14,7 +14,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "grey" }}
+      style={{ ...style, display: 'block', right:"1%", zIndex:"1", opacity:"1", color:"White"}}
       onClick={onClick}
     />
   );
@@ -25,7 +25,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}jk
-      style={{ ...style, display: "block", background: "grey" }}
+      style={{ ...style, display: 'block', left:"1%", zIndex:"1", opacity:"1", color:"White" }}
       onClick={onClick}
     />
   );
@@ -49,7 +49,7 @@ function Sliders() {
       <div className="Slider">
         <div className="image-container-carousel">
         <h2 className="text-slider">
-            Hello
+           
             </h2>
         <Slider {...settings}>
           <div className="slide">

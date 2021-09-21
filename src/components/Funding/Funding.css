@@ -1,0 +1,31 @@
+.Funding {
+    text-align: left;
+    margin :8%;
+}
+
+.funding-second-title {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.funding-columns-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 4%; 
+}
+
+.funding-column {
+    background-color: rgb(194, 195, 195);
+    width: 20%;
+}
+
+.first-funding-column-container, .second-funding-column-container, .third-funding-column-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4%;
+    font-weight: bold;
+    width: 100%;
+    height: 14vh;
+}
