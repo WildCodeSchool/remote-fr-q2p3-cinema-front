@@ -27,6 +27,7 @@ function Shooting() {
       <div className="shooting-container">
           <ShootingCard />
       </div>
+
       </div>
 
   );
