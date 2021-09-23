@@ -11,11 +11,11 @@ function NavBar() {
             </div>
             <div className="navigation-bar" >
                 <Link  className="navigation-link" to="/"></Link>
-                <Link  className="navigation-link" to="/Financer" >FINANCER VOTRE PROJET</Link>
+                <Link  className="navigation-link" to="/Funding" >FINANCER VOTRE PROJET</Link>
                 < p className="separation"></p>
-                <Link  className="navigation-link"to="/Tourner en region">TOURNER EN RÉGION</Link>
+                <Link  className="navigation-link"to="/FilmInTheRegion">TOURNER EN RÉGION</Link>
                 < p className="separation"></p>
-                <Link  className="navigation-link" to = "Films_soutenues" >FILMS SOUTENUS</Link>
+                <Link  className="navigation-link films-soutenus" to = "SupportedFilms" >FILMS SOUTENUS</Link>
 
             </div>
         </div>

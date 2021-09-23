@@ -1,22 +1,16 @@
 import React from 'react';
 import home from '../../images/home-48.png'
-import './SupportedFilms.css';
+import './FilmInTheRegion.css';
 
 
-function SupportedFilms() {
+function FilmInTheRegion() {
     return (
-        <div className="SupportedFilms">
+        <div className="FilmInTheRegion">
                 <div className="home">
                    <a href="/"> <img src={home} alt="accueil"/> </a>
                 </div>
-
-
-          
-
-            
-            
         </div>     
     )
 }
 
-export default SupportedFilms;
+export default FilmInTheRegion;

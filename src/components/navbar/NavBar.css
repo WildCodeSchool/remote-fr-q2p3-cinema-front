@@ -6,6 +6,7 @@
 .navigation-bar{
     display:flex ;
     flex-direction: row;
+    justify-content: space-between;
     width:90vw;
     height:10vh;
     background:black;
@@ -29,9 +30,9 @@
     color:white;
     font-size: 23px;
     text-decoration: none;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: auto;
+    /* margin-left:auto;
+    margin-right: auto; */
+    margin-top: auto;   
     margin-bottom: auto;
 }
 .separation{
@@ -40,6 +41,9 @@
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
+}
+.films-soutenus{
+    margin-right: 5vw;
 }
 
 @media only screen and (max-width:1024px) {
