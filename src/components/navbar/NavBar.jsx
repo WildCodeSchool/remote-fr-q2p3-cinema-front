@@ -16,7 +16,7 @@ function NavBar() {
                 < p className="separation"></p>
                 <Link  className="navigation-link"to="/Tourner en region">TOURNER EN RÉGION</Link>
                 < p className="separation"></p>
-                <Link  className="navigation-link" to = "Films_soutenues" >FILMS SOUTENUS</Link>
+                <Link  className="navigation-link" to = "/Movies" >FILMS SOUTENUS</Link>
 
             </div>
         </div>

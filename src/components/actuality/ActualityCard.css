@@ -1,0 +1,13 @@
+.ActualityList {
+    width: 100%;
+    margin: auto;
+}
+
+.ActualityList-title {
+    text-align: left;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
