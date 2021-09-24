@@ -27,6 +27,7 @@ function Shooting() {
       <div className="shooting-container">
           <ShootingCard />
       </div>
+      <h1 className="decorTitle">La région met en valeur ses décors</h1>
 
       </div>
 
