@@ -1,13 +1,20 @@
 .ActualityList {
     width: 100%;
-    margin: auto;
 }
 
 .ActualityList-title {
     text-align: left;
+    margin-bottom: 2%;
 }
 
 .cards-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+.Actuality-social-media {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+}
+

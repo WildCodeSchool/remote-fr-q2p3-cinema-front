@@ -5,10 +5,7 @@ function Actuality({ image, title }) {
   return (
     <div className="Actuality">
       <div className="actuality-container">
-        <div className="main-actuality-container">
-          <img className="actuality-img" src={image} alt="" />
-        </div>
-        <div className="second-actuality-container"></div>
+        <img className="actuality-img" src={image} alt="actuality" />
         <div className="actuality-title">
           <h3>{title}</h3>
         </div>

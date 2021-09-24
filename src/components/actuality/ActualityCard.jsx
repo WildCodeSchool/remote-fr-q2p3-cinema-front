@@ -12,7 +12,7 @@ function ActualityCard() {
   };
 
   const pic2 = {
-    title: 'En octobre, les 20 ans de UFCTC!',
+    title: 'En octobre, les 20 ans de UFTC!',
     image: image2,
   };
 
@@ -21,10 +21,6 @@ function ActualityCard() {
     image: image3,
   };
 
-  const pic4 = {
-    title: 'Facebook',
-    image: image3,
-  };
 
   return (
     <div className="ActualityList">
@@ -33,7 +29,9 @@ function ActualityCard() {
         <Actuality {...pic1} />
         <Actuality {...pic2} />
         <Actuality {...pic3} />
-        <Actuality {...pic4} />
+      </div>
+      <div className="Actuality-social-media">
+        Facebook
       </div>
     </div>
   );
