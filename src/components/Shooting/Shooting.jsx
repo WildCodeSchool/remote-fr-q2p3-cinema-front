@@ -1,5 +1,6 @@
 import React from 'react';
 import ShootingCard from './ShootingCard';
+import Landing from './Landing';
 import './Shooting.scss'
 
 function Shooting() {
@@ -28,9 +29,16 @@ function Shooting() {
           <ShootingCard />
       </div>
       <h1 className="decorTitle">La région met en valeur ses décors</h1>
+      
+      <Landing />
+
+      <h1 className="decorTitle">vous aimez tourner en region</h1>
+
+      
+
+
 
       </div>
-
   );
 }
 
