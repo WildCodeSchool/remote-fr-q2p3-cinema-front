@@ -12,7 +12,7 @@ function Footer() {
           <div className="footer-column footer-column-about">
             <h4 className="footer-main-title">
               REGION SUD
-              <p>PROVENCE-ALPES-COTE D'AZUR</p >
+              <p>PROVENCE-ALPES-COTE D'AZUR</p>
             </h4>
             <h4 className="footer-title">Hôtel de Région</h4>
             <ul className="footer-text">
@@ -30,6 +30,7 @@ function Footer() {
             </div>
             <div className="footer-contact-button">
               <p>CONTACTER LA REGION</p >
+              <p>CONTACTER LA REGION</p>
             </div>
           </div>
           <div className="footer-column footer-column-social">

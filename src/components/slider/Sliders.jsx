@@ -15,6 +15,7 @@ function SampleNextArrow(props) {
     <div
       className={className}
       style={{ ...style, display: "block", background: "white" }}
+      style={{ ...style, display: "block", background: "grey" }}
       onClick={onClick}
     />
   );
@@ -26,6 +27,7 @@ function SamplePrevArrow(props) {
     <div
       className={className}jk
       style={{ ...style, display: "block", background: "white" }}
+      style={{ ...style, display: "block", background: "grey" }}
       onClick={onClick}
     />
   );
