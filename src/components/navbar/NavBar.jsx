@@ -12,9 +12,9 @@ function NavBar() {
             <div className="navigation-bar" >
                 <Link  className="navigation-link" to="/"></Link>
                 <Link  className="navigation-link" to="/Funding" >FINANCER VOTRE PROJET</Link>
-                < p className="separation"></p>
+                < p className="separation"></p >
                 <Link  className="navigation-link"to="/FilmInTheRegion">TOURNER EN RÉGION</Link>
-                < p className="separation"></p>
+                < p className="separation"></p >
                 <Link  className="navigation-link films-soutenus" to = "SupportedFilms" >FILMS SOUTENUS</Link>
 
             </div>

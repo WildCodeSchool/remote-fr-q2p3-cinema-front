@@ -1,0 +1,128 @@
+.sideleft{
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    height:80%;
+    color:#fff;
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+.structure{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+  
+}
+.formats{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+    
+}
+.descriptif{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+    
+}
+.contact{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+  
+}
+.téléphone{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+  
+}
+.mail{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.insee{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.commune{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.interco{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.dept{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+.region{
+    text-align: center;
+    width:10%;
+    height:2%;
+    background-color: #000;
+    color:#fff;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+
+.FIN_STRUCTURE{
+    width: 80%;
+    height: 2vh;
+    margin-left: 250px;
+    margin-top:  -20px;
+    color:black;
+    border:1px solid black;
+
+}
+
+
+
+
+
