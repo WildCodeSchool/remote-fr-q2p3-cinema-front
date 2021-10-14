@@ -1,20 +1,19 @@
 .actuality-img {
-    object-fit: cover;
-    width: 18vw;
-    height: 28vh;
-}
-
-.actuality-container {
-    display: flex;
-    flex-direction: column;
+    width: 380px;
+    height: 360px;
 }
 
 .actuality-title {
-    display: flex;
     text-align: center;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: rgb(134, 131, 131);
+    position: relative;
+    bottom: 70px;
+    width: 80%;
+    margin: 0 auto;
+    height: 70px;
+    padding: 15px;
+    background-color: #fff;
 }
+
+
 
 

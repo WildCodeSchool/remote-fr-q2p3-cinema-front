@@ -60,7 +60,6 @@ function Sliders() {
   return (
     <div className="Slider">
       <div className="image-container-carousel">
-        <h2 className="text-slider"></h2>
         <Slider {...settings}>
           <div className="slide">
             <img className="image" alt="image1" src={image1} />

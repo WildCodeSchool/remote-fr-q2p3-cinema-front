@@ -5,6 +5,7 @@ import Shooting from './components/Shooting/Shooting';
 import Funding from './components/Funding/Funding';
 import Movies from './components/movies/Movies';
 import Footer from './components/footer/Footer';
+import FundingList from './components/Funding/FundingList';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/funding" component={Funding} />
           <Route path="/shooting" component={Shooting} />
           <Route path="/movies" component={Movies} />
+          <Route path="/list" component={FundingList} />
         </Switch>
       </Router>
       <Footer />

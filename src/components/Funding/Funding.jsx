@@ -1,13 +1,19 @@
 import React from 'react';
 import './Funding.css';
 import Logo from './Logo';
+import { Link } from 'react-router-dom';
+import LogiqueModale from './LogiqueModale';
 
 function Funding() {
+
+  const {revele, toggle} = LogiqueModale();
+
+  let iconStyles = {textDecoration: "none", color: 'black'}
   return (
     <div className="Logo">
       <Logo />
       <div className="Funding">
-        <div className="Funding-page"> : Accueil : Financer votre projet</div>
+        <div className="Funding-page"> Accueil Financer votre projet</div>
         <div className="funding-text">
           <h1 className="funding-main-title">
             UN FONDS D'AIDE POUR LA CREATION ET LA PRODUCTION AUDIOVISUELLE ET
@@ -25,7 +31,12 @@ function Funding() {
         </div>
         <div className="funding-columns-container">
           <div className="first-funding-column-container">
-            <div className="funding-column animation-column">Animation</div>
+            <Link
+              to={{ pathname: '/list' }} style={iconStyles}
+              className="funding-column animation-column"
+            >
+              Animation
+            </Link>
             <div className="funding-column short-film-column">
               Court-métrage
             </div>
