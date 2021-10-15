@@ -9,14 +9,13 @@ const Modal = ({ revele, cache }) =>
       <div className="wrapper">
         <div className="modal">
           <button type="button" className="close" onClick={cache}>
-          <span>&times;</span>
+            <span>&times;</span>
           </button>
-          <p>
-            Et voici la modale !
-          </p>
+          <p>Contenu Modal</p>
         </div>
       </div>
     </React.Fragment>
   ) : null;
+  
+  export default Modal;
 
-export default Modal;

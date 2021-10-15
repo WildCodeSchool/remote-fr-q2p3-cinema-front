@@ -30,9 +30,7 @@ function ActualityCard() {
         <Actuality {...pic2} />
         <Actuality {...pic3} />
       </div>
-      <div className="Actuality-social-media">
-        Facebook
-      </div>
+    
     </div>
   );
 }
