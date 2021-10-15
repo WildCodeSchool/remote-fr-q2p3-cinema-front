@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import MovieCard from './components/MovieCard';
 import MovieList from './pages/MovieList';
 import Home from './pages/Home';
 import NavBar from './components/navbar/NavBar';
-import SupportedFilms from './components/supported-films/SupportedFilms';
-import Funding from './components/Funding/Funding';
+import Shooting from './components/Shooting/Shooting';
+import Movies from './components/movies/Movies';
 import Footer from './components/footer/Footer';
+import FundingList from './components/Funding/FundingList';
 import './App.css';
 
 function App() {
@@ -15,8 +15,10 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/Supported-Films" component={SupportedFilms} />
-          <Route path="/Funding" component={Funding} />
+          <Route path="/funding" component={FundingList} />
+          <Route path="/shooting" component={Shooting} />
+          <Route path="/movies" component={Movies} />
+          <Route path="/list" component={FundingList} />
           <Route exact path="/movies" component={MovieList} />
         </Switch>
       </Router>

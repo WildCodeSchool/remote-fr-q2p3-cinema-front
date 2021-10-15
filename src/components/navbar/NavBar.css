@@ -1,32 +1,32 @@
 .NavBar{
     display: flex;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .navigation-bar{
     background-color: rgb(61, 61, 61);
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    height:15vh;
+    height:12vh;
 }
+
 .navigation-link{
     text-decoration: none;
     color:white;
-    font-size: 140%;
+    font-size: 120%;
     text-align: center;
     font-weight: bold;
 }
 
 .navigation-logo{
-    margin: 20px;
+    padding: 2%;
 }
 
 .separation{
     border: 1px solid white ;
-    height: 50%;
+    height: 60%;
     margin-top: auto;
     margin-bottom: auto;
 }

@@ -4,21 +4,28 @@ import logo from '../../images/LOGO-2-QUADRI.png';
 import './NavBar.css';
 
 function NavBar() {
-    return (
-        <div className="NavBar">
-            <div className="navigation-logo">
-                <a href="/">< img className="logo" src={logo} alt="logo" width="250" height="145"/></a>
-            </div>
-            <div className="navigation-bar" >
-                <Link  className="navigation-link" to="/"></Link>
-                <Link  className="navigation-link" to="/Financer" >FINANCER VOTRE PROJET</Link>
-                < p className="separation"></p>
-                <Link  className="navigation-link"to="/Tourner en region">TOURNER EN RÉGION</Link>
-                < p className="separation"></p>
-                <Link  className="navigation-link" to = "Films_soutenues" >FILMS SOUTENUS</Link>
+  return (
+    <div className="NavBar">
+      <div className="navigation-logo">
+        <Link to="/">
+          <img className="logo" src={logo} alt="logo" width="165" height="90" />
+        </Link>
+      </div>
+      <div className="navigation-bar">
+        <Link className="navigation-link" to="/Funding">
+          FINANCER VOTRE PROJET
+        </Link>
+        <p className="separation"></p>
+        <Link className="navigation-link" to="/Shooting">
+          TOURNER EN REGION
+        </Link>
+        <p className="separation"></p>
+        <Link className="navigation-link" to="/Movies">
+          FILMS SOUTENUS
+        </Link>
+      </div>
+    </div>
+  );
+}
 
-            </div>
-        </div>
-    )
-} 
 export default NavBar;
