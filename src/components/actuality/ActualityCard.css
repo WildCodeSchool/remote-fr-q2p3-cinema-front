@@ -1,0 +1,30 @@
+.ActualityList {
+    width: 100%;
+}
+
+.ActualityList-title {
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.cards-container {
+    display: flex;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.Actuality-social-media {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.ActualityList-title {
+    margin-left: 4%;
+    font-size: 180%;
+    font-weight: bold;
+}
+

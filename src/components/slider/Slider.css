@@ -1,23 +1,13 @@
 .image {
-    height:40vh;
+    height:50vh;
     width: 100%; 
     object-fit: cover;
-}
-
-.image-container-carousel {
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-bottom: 2%;
 }
 
 .slick-prev:before, .slick-next:before {
     color: white !important;
     background-color: grey;
   }
-
-.text-slider {
-    color : black;
-    position : fixed;
-    height: 100%;
-}
 
 

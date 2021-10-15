@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className="Footer">
         <section className="footer-logo" id="logo">
-        <img id="logo" src={logo} alt='Logo-2-blanc' width="250" height="155"/>
+        <img id="logo" src={logo} alt='Logo-2-blanc' width="215" height="125"/>
         </section>
         <div className="footer-columns-container">
           <div className="footer-column footer-column-about">
