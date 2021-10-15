@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import MovieList from './pages/MovieList';
 import Home from './pages/Home';
 import NavBar from './components/navbar/NavBar';
 import Shooting from './components/Shooting/Shooting';
@@ -18,6 +19,7 @@ function App() {
           <Route path="/shooting" component={Shooting} />
           <Route path="/movies" component={Movies} />
           <Route path="/list" component={FundingList} />
+          <Route exact path="/movies" component={MovieList} />
         </Switch>
       </Router>
       <Footer />
