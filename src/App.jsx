@@ -6,6 +6,7 @@ import Funding from './components/Funding/Funding';
 import Footer from './components/footer/Footer';
 import FilmInTheRegion from'./components/FilmInTheRegion/FilmInTheRegion';
 import Financement from './components/financement/Financement'
+import Contact from './components/Contact/Contact'
 import './App.css';
 
 
@@ -21,7 +22,8 @@ function App() {
           <Route path ="/SupportedFilms" component = {SupportedFilms} />
           <Route path ="/Funding" component = {Funding} />
           <Route path ="/FilmInTheRegion" component = {FilmInTheRegion} />
-          <Route path ="/financement"  component={Financement} />     
+          <Route path ="/financement"  component={Financement} />  
+          <Route path="/Contact"  component={Contact} />   
           </Switch>
         </Router> 
         
