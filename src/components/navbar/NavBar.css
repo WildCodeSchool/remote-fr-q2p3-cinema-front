@@ -9,7 +9,7 @@
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    height:16vh;
+    height:12vh;
 }
 
 .navigation-link{
@@ -26,7 +26,7 @@
 
 .separation{
     border: 1px solid white ;
-    height: 50%;
+    height: 60%;
     margin-top: auto;
     margin-bottom: auto;
 }

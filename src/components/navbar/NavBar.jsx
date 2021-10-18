@@ -20,11 +20,12 @@ function NavBar() {
           TOURNER EN REGION
         </Link>
         <p className="separation"></p>
-        <Link className="navigation-link" to="Films_soutenues">
+        <Link className="navigation-link" to="/Movies">
           FILMS SOUTENUS
         </Link>
       </div>
     </div>
   );
 }
+
 export default NavBar;

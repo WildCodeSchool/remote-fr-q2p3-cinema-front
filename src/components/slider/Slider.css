@@ -1,7 +1,8 @@
 .image {
-    height:60vh;
+    height:50vh;
     width: 100%; 
     object-fit: cover;
+    margin-bottom: 2%;
 }
 
 .slick-prev:before, .slick-next:before {
