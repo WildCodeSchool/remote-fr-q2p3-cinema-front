@@ -1,0 +1,19 @@
+.actuality-img {
+    width: 380px;
+    height: 360px;
+}
+
+.actuality-title {
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    width: 80%;
+    margin: 0 auto;
+    height: 70px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+
+
+
