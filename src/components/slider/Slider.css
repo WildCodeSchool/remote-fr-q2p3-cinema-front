@@ -1,13 +1,39 @@
-.image {
-    height:50vh;
-    width: 100%; 
-    object-fit: cover;
-    margin-bottom: 2%;
+.Slider {
+    margin-top: 2%;
 }
 
-.slick-prev:before, .slick-next:before {
-    color: white !important;
-    background-color: grey;
-  }
+.image {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2%;
+}
 
+.slick-prev:before,
+.slick-next:before {
+  color: white !important;
+  background-color: grey;
+}
 
+.image-container-carousel {
+  position: relative;
+}
+
+.title-carousel {
+  position: absolute;
+  top: 140px;
+  left: 11%;
+  z-index: 2;
+  color: white;
+  font-size: 290%;
+  font-weight: bold;
+}
+
+.greetings-carousel {  
+    position: absolute;
+    top: 440px;
+    right: 2%;
+    z-index: 2;
+    color: white;
+    font-size: 80%;
+}

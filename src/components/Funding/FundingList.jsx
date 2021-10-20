@@ -33,8 +33,8 @@ function FundingList() {
 
         <div className="Funding">
           <Modal revele={revele} cache={toggle} />
-          <div className="Funding-page"> Accueil Financer votre projet</div>
           <div className="funding-text">
+          <div className="Funding-page"> Accueil Financer votre projet</div>
             <h1 className="funding-main-title">
               UN FONDS D'AIDE POUR LA CREATION ET LA PRODUCTION AUDIOVISUELLE ET
               CINEMATOGRAPHIQUE
@@ -79,7 +79,7 @@ function FundingList() {
               </div>
               <div className="funding-column works-column">
                 Oeuvres immersives
-                <p>ou interactives</p>
+                ou intéractives
               </div>
               <div className="funding-column project-column">
                 projets groupés

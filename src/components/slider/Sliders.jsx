@@ -60,6 +60,11 @@ function Sliders() {
   return (
     <div className="Slider">
       <div className="image-container-carousel">
+        <h1 className="title-carousel">
+          Votre portail Région Sud<p>Cinéma Audiovisuel</p>
+        </h1>
+        <div className="greetings-carousel">François Lefebvre / France TV
+        </div>
         <Slider {...settings}>
           <div className="slide">
             <img className="image" alt="image1" src={image1} />
