@@ -30,7 +30,7 @@
 
 .funding-column {
     background-color: rgb(189, 188, 188);
-    width: 26%;
+    width: 28%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@
     margin-bottom: 6%;
     font-weight: bold;
     width: 800px;
-    height: 190px;
+    height: 200px;
 }
 
 

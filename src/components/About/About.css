@@ -1,0 +1,11 @@
+.title-about {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
