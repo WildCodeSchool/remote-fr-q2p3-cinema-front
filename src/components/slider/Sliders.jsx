@@ -9,6 +9,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
 
 /*function SampleNextArrow(props) {
+function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
@@ -44,6 +45,7 @@ function SamplePrevArrow(props) {
     />
   );
 }*/
+
 
 function Sliders() {
   const settings = {

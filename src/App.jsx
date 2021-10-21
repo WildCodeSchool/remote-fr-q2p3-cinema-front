@@ -6,6 +6,7 @@ import Shooting from './components/Shooting/Shooting';
 import Footer from './components/footer/Footer';
 import FundingList from './components/Funding/FundingList';
 import About from './components/About/About';
+import Modale from './components/movies/Modale';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/list" component={FundingList} />
           <Route exact path="/movies" component={MovieList} />
+          <Route exact path="/movies/:FILM_TITRE" component={Modale} />
         </Switch>
       </Router>
       <Footer />
