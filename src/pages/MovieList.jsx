@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
-// import Movies from '../components/movies/MovieCard';
-// import Movies from '../components/movies/Movies';
-import Modale from '../components/movies/Modale';
-// import LogiqueModale from '../components/movies/LogiqueModale';
 import Modal from './Modal';
+import BacImg from '../components/assets/BAC Nord.jpg';
+import BacVid from '../components/assets/videos/Bac Nord ba.mp4';
 import './MovieList.css'
 
 
@@ -14,8 +11,6 @@ function MovieList() {
     const [movie, setMovie] = useState([]);
     const [genre, setGenre] = useState("All");
     const [date, setDate] = useState("All");
-    // const [modalOpen, setModalOpen] = useState(false);
-    // const { revele, toggle } = LogiqueModale();
     const [openModal, setOpenModal] = useState(null);
 
 
@@ -30,20 +25,9 @@ function MovieList() {
             .then((data) => setMovies(data))
     }, [movies])
 
-    // function showModal(id) {
-    //     setOpenModal(true);
-    // }
-  
     const showModal = id => {
         setOpenModal(id);
     }
-
-    // const showModal = id => {
-    //     setOpenModal(prevOpenModal => ({
-    //       ...prevOpenModal,
-    //       [id]: !prevOpenModal[id]
-    //     }));
-    //   };
 
     const hideModal = () => {
         setOpenModal(false);
@@ -128,29 +112,31 @@ function MovieList() {
                     <div key={movie.id} style={{ margin: "10px" }}>
                     <button onClick={ () => showModal(movie.id)}>open</button>    
                          <Modal showModal={openModal} hideModal={hideModal} movie={movie}>
+                        <div className="Modal">
                         <div className="modalHeader">
-                            <h2>Réalisateur: {movie.FILM_TITRE}</h2>
-                        </div>
-                        <div className="modalBodyTitle">
-                            <h3>Fiche Technique</h3>
+                            <h2>{movie.FILM_TITRE}</h2>
+                            <img className="modal-img" src={BacImg} all="Bac Nord" />
+                            <video controls autoPlay currentTime={11.3} src={BacVid} />
                         </div>
                             <div className="modalBody">
+                            <h3>Fiche Technique</h3>
                             <p>Réalisateur: {movie.FILM_REALISATEUR}</p>
-                            <li>Producteur:{movie.FILM_PRODUCTEUR}</li> 
-                            <li>Commune:{movie.FILM_COMMUNE}</li>
-                            <li>Année:{movie.FILM_ANNEE}</li>
-                            <li>Genre:{movie.FILM_GENRE}</li>
-                            <li>Format:{movie.FILM_FORMAT}</li>
+                            <p>Producteur:{movie.FILM_PRODUCTEUR}</p> 
+                            <p>Commune:{movie.FILM_COMMUNE}</p>
+                            <p>Année:{movie.FILM_ANNEE}</p>
+                            <p>Genre:{movie.FILM_GENRE}</p>
+                            <p>Format:{movie.FILM_FORMAT}</p>
                             <h3 className="modal-subventions">Subventions</h3>
                             <div className="modal-subventions-details">
-                            <li>Type:{movie.SUBVENTION_TYPEAIDE}</li>
-                            <li>Année:{movie.SUBVENTION_ANNEE}</li>
-                            <li>Montant région:{movie.SUBVENTION_MONTANT_REGION}</li>
-                            <li>Budget prévisionnel:{movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}</li>
+                            <p>Type:{movie.SUBVENTION_TYPEAIDE}</p>
+                            <p>Année:{movie.SUBVENTION_ANNEE}</p>
+                            <p>Montant région:{movie.SUBVENTION_MONTANT_REGION}</p>
+                            <p>Budget prévisionnel:{movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}</p>
                             </div>
                             </div>
                         <div className="modalFooter">
                         <button className="modalBtn">Fermer</button>
+                        </div>
                     </div>    
                         </Modal>                       
                         <div className="MovieCard">
@@ -210,16 +196,33 @@ function MovieList() {
                     <div key={movie.id} style={{ margin: "10px" }}>
                         <button onClick={ () => showModal(movie.id)}>open</button>
                         <Modal showModal={openModal} hideModal={hideModal} movie={movie}>
-                <div className="modalHeader">
-                    <h2>Réalisateur: {movie.FILM_REALISATEUR}</h2>
-                </div>
-                <div className="modalBody">
-                    <h3>Titre 2</h3>
-                </div>
-                <div className="modalFooter">
-                    <button className="modalBtn">Fermer</button>
-                </div>    
-            </Modal> 
+                        <div className="Modal">
+                        <div className="modalHeader">
+                            <h2>{movie.FILM_TITRE}</h2>
+                            <img className="modal-img" src={BacImg} all="Bac Nord" />
+                            <video controls autoPlay currentTime={11.3} src={BacVid} />
+                        </div>
+                            <div className="modalBody">
+                            <h3>Fiche Technique</h3>
+                            <p>Réalisateur: {movie.FILM_REALISATEUR}</p>
+                            <p>Producteur:{movie.FILM_PRODUCTEUR}</p> 
+                            <p>Commune:{movie.FILM_COMMUNE}</p>
+                            <p>Année:{movie.FILM_ANNEE}</p>
+                            <p>Genre:{movie.FILM_GENRE}</p>
+                            <p>Format:{movie.FILM_FORMAT}</p>
+                            <h3 className="modal-subventions">Subventions</h3>
+                            <div className="modal-subventions-details">
+                            <p>Type:{movie.SUBVENTION_TYPEAIDE}</p>
+                            <p>Année:{movie.SUBVENTION_ANNEE}</p>
+                            <p>Montant région:{movie.SUBVENTION_MONTANT_REGION}</p>
+                            <p>Budget prévisionnel:{movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}</p>
+                            </div>
+                            </div>
+                        <div className="modalFooter">
+                        <button className="modalBtn">Fermer</button>
+                        </div>
+                        </div>    
+                        </Modal> 
                         <div className="MovieCard">
                         {/* <Modale revele={revele} cache={toggle} /> */}
                            <div className="movie-container">
@@ -236,19 +239,6 @@ function MovieList() {
                 )
                 )}
             </div>
-        {/* <div className="MovieCard">
-        <Modale revele={revele} cache={toggle} />
-          <div className="movie-container">
-              <div className="movie-content">
-              <Link to={{ pathname: '/movies/cards' }}>
-                <h1 className="movie-title">{movie.FILM_TITRE}</h1>
-                </Link>
-                    <li>Réalisateur: {movie.FILM_REALISATEUR}</li>
-                    <li>Année:{movie.FILM_ANNEE}</li>
-                    <li>Genre:{movie.FILM_GENRE}</li>
-              </div>
-          </div>  
-        </div> */}
         </div>
     }
 
