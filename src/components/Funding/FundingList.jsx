@@ -20,6 +20,7 @@ function FundingList() {
       .then((data) => setFundings(data));
   }, []);
 
+
   return (
     <div className="Logo">
       <Logo />

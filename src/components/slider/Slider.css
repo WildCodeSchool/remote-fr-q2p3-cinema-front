@@ -21,11 +21,11 @@
 
 .title-carousel {
   position: absolute;
-  top: 140px;
+  top: 160px;
   left: 8%;
   z-index: 2;
   color: white;
-  font-size: 290%;
+  font-size: 300%;
   font-weight: bold;
 }
 
