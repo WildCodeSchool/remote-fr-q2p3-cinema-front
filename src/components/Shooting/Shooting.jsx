@@ -1,5 +1,6 @@
 import React from 'react';
 import ShootingCard from './ShootingCard';
+import ShootingTurn from './ShootingTurn';
 import Landing from './Landing';
 import './Shooting.scss'
 
@@ -34,7 +35,7 @@ function Shooting() {
 
       <h1 className="decorTitle">vous aimez tourner en region</h1>
 
-      
+      <ShootingTurn />
 
 
 

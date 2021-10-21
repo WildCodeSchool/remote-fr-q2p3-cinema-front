@@ -1,9 +1,10 @@
 import React from 'react'
+import './ShootingTurn.css'
 import ShootingTurnCard from './ShootingTurnCard'
 import togetherImage from '../assets/together.jpg'
 import tournageImage from '../assets/tournage.jpg'
-import portraitImage from '../assets/portrait.jpg'
-import ShootingCardItems from './ShootingCardItems'
+import portraitImage from '../assets/tournage.jpg'
+
 
 function ShootingTurn() {
 
