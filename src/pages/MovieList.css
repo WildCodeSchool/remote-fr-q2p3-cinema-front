@@ -1,0 +1,65 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.Modal {
+    height: 700px;
+    width: 700px;
+    background: rgb(209, 206, 206);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.Modal img {
+    width: 45vh;
+    height: 45vh;
+    margin-left: 2%;
+}
+
+.Modal video {
+    height: 25vh;
+    margin-left: 2%;
+    /* transform: translate(0%, -30%); */
+}
+
+.Modal p {
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.modalBody {
+    margin-top: 20px;
+    padding-top: 30px;
+    font-size: larger;
+}
+
+h2 {
+    position: relative;
+    left: 50%;
+    margin: 1%;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 6%;
+    justify-content: center;
+    background-color: rgb(214, 214, 214);
+    width: 20%;
+}
