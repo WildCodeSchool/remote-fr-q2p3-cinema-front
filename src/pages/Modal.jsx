@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Modal = ({ showModal, hideModal, children}) => {
+const Modal = ({ showModal, hideModal, children, movie}) => {
     return (
-        showModal && (
+        showModal === movie.id && (
             <div className="modalBack" onClick={hideModal}>
                 <div className="modalContainer">
                     { children }

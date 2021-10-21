@@ -16,8 +16,8 @@ function MovieList() {
     const [date, setDate] = useState("All");
     // const [modalOpen, setModalOpen] = useState(false);
     // const { revele, toggle } = LogiqueModale();
-    const [openModal, setOpenModal] = useState({});
-    const [openId, setOpenId] = useState(null);
+    const [openModal, setOpenModal] = useState(null);
+
 
 
     
@@ -34,17 +34,16 @@ function MovieList() {
     //     setOpenModal(true);
     // }
   
-    // const showModal = id => {
-    //     setOpenModal(true);
-    //     setOpenId(id)
-    // }
-
     const showModal = id => {
-        setOpenModal(prevOpenModal => ({
-          ...prevOpenModal,
-          [id]: !prevOpenModal[id]
-        }));
-      };
+        setOpenModal(id);
+    }
+
+    // const showModal = id => {
+    //     setOpenModal(prevOpenModal => ({
+    //       ...prevOpenModal,
+    //       [id]: !prevOpenModal[id]
+    //     }));
+    //   };
 
     const hideModal = () => {
         setOpenModal(false);
@@ -125,31 +124,46 @@ function MovieList() {
             </button>
 
             <div>
-                {movie.map((m) => (
-                    <div key={m.id} style={{ margin: "10px" }}>
-                        <button onClick={ () => showModal(m)}>open</button>
-                         <Modal id={m.id} showModal={openModal} hideModal={hideModal}>
-                <div className="modalHeader">
-                    <h2>Réalisateur: {m.FILM_REALISATEUR}</h2>
-                </div>
-                <div className="modalBody">
-                    <h3>Titre 2</h3>
-                </div>
-                <div className="modalFooter">
-                    <button className="modalBtn">Fermer</button>
-                </div>    
-            </Modal>                       
+                {movie.map((movie) => (
+                    <div key={movie.id} style={{ margin: "10px" }}>
+                    <button onClick={ () => showModal(movie.id)}>open</button>    
+                         <Modal showModal={openModal} hideModal={hideModal} movie={movie}>
+                        <div className="modalHeader">
+                            <h2>Réalisateur: {movie.FILM_TITRE}</h2>
+                        </div>
+                        <div className="modalBodyTitle">
+                            <h3>Fiche Technique</h3>
+                        </div>
+                            <div className="modalBody">
+                            <p>Réalisateur: {movie.FILM_REALISATEUR}</p>
+                            <li>Producteur:{movie.FILM_PRODUCTEUR}</li> 
+                            <li>Commune:{movie.FILM_COMMUNE}</li>
+                            <li>Année:{movie.FILM_ANNEE}</li>
+                            <li>Genre:{movie.FILM_GENRE}</li>
+                            <li>Format:{movie.FILM_FORMAT}</li>
+                            <h3 className="modal-subventions">Subventions</h3>
+                            <div className="modal-subventions-details">
+                            <li>Type:{movie.SUBVENTION_TYPEAIDE}</li>
+                            <li>Année:{movie.SUBVENTION_ANNEE}</li>
+                            <li>Montant région:{movie.SUBVENTION_MONTANT_REGION}</li>
+                            <li>Budget prévisionnel:{movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}</li>
+                            </div>
+                            </div>
+                        <div className="modalFooter">
+                        <button className="modalBtn">Fermer</button>
+                    </div>    
+                        </Modal>                       
                         <div className="MovieCard">
                         
                         {/* <Modale revele={revele} cache={toggle} movie={movie}/> */}
                            <div className="movie-container">
                            <div className="movie-content">
                            {/* <button className="openModalBtn" onClick={() => {setModalOpen(true);}}>
-                              <h1 className="movie-title" className="openModalBtn">{movie.FILM_TITRE}</h1>
                               {modalOpen && <Modale setOpenModal={setModalOpen}>Bonjour</Modale>}</button> */}
-                                 <li>Réalisateur: {m.FILM_REALISATEUR}</li>                                
-                                 <li>Année:{m.FILM_ANNEE}</li>
-                                 <li>Genre:{m.FILM_GENRE}</li>
+                              <h1 className="movie-title" className="openModalBtn">{movie.FILM_TITRE}</h1>
+                                 <li>Réalisateur: {movie.FILM_REALISATEUR}</li>                                
+                                 <li>Année:{movie.FILM_ANNEE}</li>
+                                 <li>Genre:{movie.FILM_GENRE}</li>
                             </div>
                             </div>  
                         </div>
@@ -194,6 +208,18 @@ function MovieList() {
             <div>
                 {movies.slice(0, 8).map(movie => (
                     <div key={movie.id} style={{ margin: "10px" }}>
+                        <button onClick={ () => showModal(movie.id)}>open</button>
+                        <Modal showModal={openModal} hideModal={hideModal} movie={movie}>
+                <div className="modalHeader">
+                    <h2>Réalisateur: {movie.FILM_REALISATEUR}</h2>
+                </div>
+                <div className="modalBody">
+                    <h3>Titre 2</h3>
+                </div>
+                <div className="modalFooter">
+                    <button className="modalBtn">Fermer</button>
+                </div>    
+            </Modal> 
                         <div className="MovieCard">
                         {/* <Modale revele={revele} cache={toggle} /> */}
                            <div className="movie-container">
