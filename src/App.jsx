@@ -3,6 +3,10 @@ import MovieList from './pages/MovieList';
 import Home from './pages/Home';
 import NavBar from './components/navbar/NavBar';
 import Shooting from './components/Shooting/Shooting';
+<<<<<<< HEAD
+=======
+import Movies from './components/movies/Movies';
+>>>>>>> dev
 import Footer from './components/footer/Footer';
 import FundingList from './components/Funding/FundingList';
 import './App.css';
