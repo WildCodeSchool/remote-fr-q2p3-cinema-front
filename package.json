@@ -23,8 +23,7 @@
     "sass-loader": "^10.2.0",
     "scss": "^0.2.4",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^1.1.2",
-    "webpack": "^4.44.2"
+    "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
