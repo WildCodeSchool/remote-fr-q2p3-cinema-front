@@ -29,6 +29,7 @@ function Footer() {
               </ul>
             </div>
             <div className="footer-contact-button">
+              <p>CONTACTER LA REGION</p >
               <p>CONTACTER LA REGION</p>
             </div>
           </div>
