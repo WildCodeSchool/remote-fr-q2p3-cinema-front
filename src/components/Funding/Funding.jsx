@@ -1,12 +1,15 @@
-import './Funding.css';
+import React from 'react'
 
-function Funding() {
-   
-  return(
-    <div className="Funding">
-       
-    </div>
-)
+const Funding = ({ showModal, hideModal, children, funding}) => {
+    return (
+        showModal === funding.id && (
+            <div className="modalBack" onClick={hideModal}>
+                <div className="modalContainer">
+                    { children }
+                </div>
+            </div>
+        )
+    )
 }
 
 export default Funding;

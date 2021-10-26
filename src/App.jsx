@@ -16,10 +16,9 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/funding" component={FundingList} />
           <Route path="/shooting" component={Shooting} />
           <Route path="/about" component={About} />
-          <Route path="/list" component={FundingList} />
+          <Route path="/funding" component={FundingList} />
           <Route exact path="/movies" component={MovieList} />
           <Route exact path="/movies/:FILM_TITRE" component={Modale} />
         </Switch>
