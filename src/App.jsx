@@ -7,12 +7,9 @@ import Footer from './components/footer/Footer';
 import FundingList from './components/Funding/FundingList';
 import Financement from './components/financement/Financement';
 import Contact from './components/Contact/Contact';
-
+import About from './components/About/About';
+import Modale from './components/movies/Modale';
 import './App.css';
-
-
-
-
 
 function App() {
   return (
@@ -21,12 +18,15 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/funding" component={FundingList} />
           <Route path="/shooting" component={Shooting} />
           <Route path="/list" component={FundingList} />
           <Route exact path="/movies" component={MovieList} />
           <Route path="/financement" component={Financement} />
           <Route path ="/Contact" component={Contact} />
+          <Route path="/about" component={About} />
+          <Route path="/funding" component={FundingList} />
+          <Route exact path="/movies" component={MovieList} />
+          <Route exact path="/movies/:FILM_TITRE" component={Modale} />
         </Switch>
       </Router>
       <Footer />

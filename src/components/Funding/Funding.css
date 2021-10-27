@@ -1,40 +1,31 @@
-.Funding {
-    text-align: left;
-    margin-left: 8%;
-    margin-right: 10%;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.Funding-page {
-    margin-top: 2%;
-    margin-bottom: 2%;
+.wrapper {
+    height: 600px;
+    width: 700px;
+    background: grey;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.funding-second-title {
-    margin-top: 2%;
-    margin-bottom: 2%;
+.wrapper p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-.funding-columns-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-top: 6%;
-    justify-content: center;
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
 }
-
-.funding-column {
-    background-color: rgb(214, 214, 214);
-    width: 20%;
-}
-
-.first-funding-column-container, .second-funding-column-container, .third-funding-column-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 6%;
-    font-weight: bold;
-    width: 100%;
-    height: 17vh;
-}
-
-

@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from '../../images/LOGO-2-BLANC.png';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
+  let iconStyles = {color: "#FFFF", textDecoration: "none"}
     return (
         <div className="Footer">
         <section className="footer-logo" id="logo">
@@ -51,6 +53,9 @@ function Footer() {
               <li>Logo Région Sud</li>
               <li>Recrutement</li>
               <li>Gestion des cookies</li>
+              <Link className="about-footer" to={{ pathname:'/about'}} style={iconStyles}>
+              À Propos
+              </Link>
             </ul>
         </div>
       </div>

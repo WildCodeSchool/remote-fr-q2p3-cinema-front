@@ -1,8 +1,12 @@
+.Slider {
+    margin-top: 2%;
+}
+
 .image {
-    height:50vh;
-    width: 100%; 
-    object-fit: cover;
-    margin-bottom: 2%;
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2%;
 }
 
 .slick-prev:before {
@@ -10,4 +14,25 @@
     background-color: grey;
   }
 
+.image-container-carousel {
+  position: relative;
+}
 
+.title-carousel {
+  position: absolute;
+  top: 160px;
+  left: 8%;
+  z-index: 2;
+  color: white;
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.greetings-carousel {  
+    position: absolute;
+    top: 440px;
+    right: 2%;
+    z-index: 2;
+    color: white;
+    font-size: 80%;
+}

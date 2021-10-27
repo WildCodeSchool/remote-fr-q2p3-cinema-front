@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './FundingList.css';
-import Funding from './Funding';
 import axios from 'axios';
-import Modal from './Modal';
-import LogiqueModale from './LogiqueModale';
-import { Link } from 'react-router-dom';
 import Logo from './Logo';
-
+import Funding from './Funding';
 function FundingList() {
   const [fundings, setFundings] = useState([]);
-  const { revele, toggle } = LogiqueModale();
-
-  let iconStyles = { textDecoration: 'none', color: 'black' };
+  const [openModal, setOpenModal] = useState(null);
 
   useEffect(() => {
     axios
@@ -20,6 +14,14 @@ function FundingList() {
       .then((data) => setFundings(data));
   }, []);
 
+  const showModal = (id) => {
+    setOpenModal(id);
+  };
+
+  const hideModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <div className="Logo">
       <Logo />
@@ -27,14 +29,39 @@ function FundingList() {
       <div className="FundingList">
         {fundings.map((funding) => (
           <div key={funding.id}>
-            <Funding funding={funding} />
+            <button onClick={() => showModal(funding.id)}>open</button>
+            <Funding
+              showModal={openModal}
+              hideModal={hideModal}
+              funding={funding}
+            >
+              <div className="modalHeader"></div>
+              <div className="modalBodyTitle">
+                <h3>LONG MÉTRAGE</h3>
+                <div className="text-modal-funding">
+                  {' '}
+                  Ce fond répond à des modalités pratiques des aides à
+                  l'écriture, au développement et à la production des oeuvres
+                  cinématographiques de fiction de longue durée. Encadrées par
+                  la réglementation européenne, ces aides s'inscrivent dans la
+                  convetion de partenariat avec le Centre national du cinéma et
+                  de l'image animée (CNC) et son définies par le cadre
+                  d'intervention adopté par la Région.
+                </div>
+              </div>
+              <div className="modalBody">
+                <p>Réalisateur: {funding.FILM_FORMAT}</p>
+              </div>
+              <div className="modalFooter">
+                <button className="modalBtn">Fermer</button>
+              </div>
+            </Funding>
           </div>
         ))}
 
         <div className="Funding">
-          <Modal revele={revele} cache={toggle} />
-          <div className="Funding-page"> Accueil Financer votre projet</div>
           <div className="funding-text">
+            <div className="Funding-page"> Accueil Financer votre projet</div>
             <h1 className="funding-main-title">
               UN FONDS D'AIDE POUR LA CREATION ET LA PRODUCTION AUDIOVISUELLE ET
               CINEMATOGRAPHIQUE
@@ -49,15 +76,9 @@ function FundingList() {
               prennent la forme de bourses d'écriture.
             </h4>
           </div>
-          <div onClick={toggle} className="funding-columns-container">
+          <div className="funding-columns-container">
             <div className="first-funding-column-container">
-              <Link
-                to={{ pathname: '/list' }}
-                style={iconStyles}
-                className="funding-column animation-column"
-              >
-                Animation
-              </Link>
+              <div className="funding-column animation-column">Animation</div>
               <div className="funding-column short-film-column">
                 Court-métrage
               </div>
@@ -78,11 +99,10 @@ function FundingList() {
                 Web-création
               </div>
               <div className="funding-column works-column">
-                Oeuvres immersives
-                <p>ou interactives</p>
+                Oeuvres immersives ou intéractives
               </div>
               <div className="funding-column project-column">
-                projets groupés
+                Projets groupés
               </div>
             </div>
           </div>
