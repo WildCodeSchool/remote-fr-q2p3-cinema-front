@@ -6,26 +6,43 @@
     bottom: 0;
 }
 
-.wrapper {
-    height: 600px;
+.Funding {
+    height: 700px;
     width: 700px;
-    background: grey;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.wrapper p {
+    background: rgb(209, 206, 206);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.modalBody {
+    margin-top: 20px;
+    padding-top: 30px;
+    font-size: larger;
+}
+
+h2 {
+    position: relative;
+    left: 50%;
+    margin: 1%;
 }
 
 .close {
     position: absolute;
     right: 15px;
     top: 15px;
+}
+
+.movie-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-top: 6%;
+    justify-content: center;
+    background-color: rgb(214, 214, 214);
+    width: 20%;
 }

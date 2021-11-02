@@ -27,7 +27,26 @@ function FundingList() {
       <Logo />
 
       <div className="FundingList">
-        {fundings.map((funding) => (
+
+        <div className="Funding">
+          <div className="funding-text">
+            <div className="Funding-page"> Accueil Financer votre projet</div>
+            <h1 className="funding-main-title">
+              UN FONDS D'AIDE POUR LA CREATION ET LA PRODUCTION AUDIOVISUELLE ET
+              CINEMATOGRAPHIQUE
+            </h1>
+            <h4 className="funding-second-title">
+              En partenariat avec le CNC (Centre national du cinéma et de
+              l'image animée), la Région Sud aide à la création et à la
+              production d'oeuvres cinématographiques et audiovisuelles de
+              qualité dans toute leur diversité. Des aides à l'écriture, en
+              développement et en production sont proposées selon les types de
+              projet. Les aides à l'écriture, versées directement aux auteurs,
+              prennent la forme de bourses d'écriture.
+            </h4>
+          </div>
+          <div className="funding-columns-container">
+          {fundings.map((funding) => (
           <div key={funding.id}>
             <button onClick={() => showModal(funding.id)}>open</button>
             <Funding
@@ -50,7 +69,8 @@ function FundingList() {
                 </div>
               </div>
               <div className="modalBody">
-                <p>Réalisateur: {funding.FILM_FORMAT}</p>
+                <h1 className="funding-title"></h1>
+                <p>{funding.FILM_FORMAT}</p>
               </div>
               <div className="modalFooter">
                 <button className="modalBtn">Fermer</button>
@@ -58,25 +78,6 @@ function FundingList() {
             </Funding>
           </div>
         ))}
-
-        <div className="Funding">
-          <div className="funding-text">
-            <div className="Funding-page"> Accueil Financer votre projet</div>
-            <h1 className="funding-main-title">
-              UN FONDS D'AIDE POUR LA CREATION ET LA PRODUCTION AUDIOVISUELLE ET
-              CINEMATOGRAPHIQUE
-            </h1>
-            <h4 className="funding-second-title">
-              En partenariat avec le CNC (Centre national du cinéma et de
-              l'image animée), la Région Sud aide à la création et à la
-              production d'oeuvres cinématographiques et audiovisuelles de
-              qualité dans toute leur diversité. Des aides à l'écriture, en
-              développement et en production sont proposées selon les types de
-              projet. Les aides à l'écriture, versées directement aux auteurs,
-              prennent la forme de bourses d'écriture.
-            </h4>
-          </div>
-          <div className="funding-columns-container">
             <div className="first-funding-column-container">
               <div className="funding-column animation-column">Animation</div>
               <div className="funding-column short-film-column">

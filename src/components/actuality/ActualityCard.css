@@ -13,9 +13,6 @@
 .Actuality-social-media {
     display: flex;
     justify-content: center;
-    border: 2px solid black;
-    margin-right: 22%;
-    margin-left: 22%;
 }
 
 .ActualityList-title {

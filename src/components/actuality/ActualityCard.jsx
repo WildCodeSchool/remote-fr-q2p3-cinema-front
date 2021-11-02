@@ -4,6 +4,7 @@ import './ActualityCard.css';
 import image1 from '../../images/bloc1.jpg';
 import image2 from '../../images/bloc2.jpg';
 import image3 from '../../images/bloc3.jpg';
+import Facebook from './Facebook';
 
 function ActualityCard() {
   const pic1 = {
@@ -26,7 +27,6 @@ function ActualityCard() {
     <div className="ActualityList">
       <div className="actuality-container">
       <h3 className="section-title ActualityList-title">ACTUALITES A LA UNE</h3>
-      {/*<div className="link-actuality">Voir toutes les actualités</div>*/}
       <div className="cards-container">
         <Actuality {...pic1} />
         <Actuality {...pic2} />
@@ -34,7 +34,7 @@ function ActualityCard() {
       </div>
       </div>
     <div className="Actuality-social-media ">
-       Facebook 
+        <Facebook />
     </div>
     </div>
   );
