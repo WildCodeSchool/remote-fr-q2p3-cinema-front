@@ -20,12 +20,20 @@
 .funding-main-title {
   margin-bottom: 2%;
   margin-top: 2%;
+  text-align: left;
 }
 
 .faq-button {
     border-radius: 20px;
-    width: 15%;
     background-color: rgb(211, 211, 211);
+    font-size: 140%;
+    position: absolute;
+    right: 120px;
+    bottom: 50px;
+    padding: 15px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .funding-column {
@@ -41,44 +49,92 @@
 }
 
 .modalBodyFin {
-  width: 20vw;
-  height: 20vh;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .wrapper {
-    height: 700px;
-    width: 1000px;
     background:#FFFF;
-    border: solid 1px black;
     color: black;
     position: absolute;
-    top: 260%;
-    left: 70%;
+    text-align: left;
+    flex-direction: row-reverse;
+    height: 90vh;
+    width: 80vw;
+    top: 100%;
+    left: 54%;
     transform: translate(-50%, -50%);
-    font-size: 180%;
-    font-weight: bold;
-    text-align: center;
+    display: flex;
+    border : 1px rgb(134, 134, 134) solid;
 }
 
 .close {
     position: absolute;
     right: 10px;
     top: 10px;
+    padding: 4px;
 }
 
-p {
+.second-modal-part {
+    width: 70%;
+    padding: 10px;
+}
+
+.props-content {
+    width: 30%;
+    position: relative;
+    padding: 40px;
+    padding-top: 100px;
+    padding-right: 60px;
+}
+
+.props-funding {
+    margin-bottom: 2%;
+}
+
+.second-text-modal {
+    margin-top: 4%;
     display: flex;
-    justify-content: center;
-    margin : 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex-direction: column;  
+    padding-left: 40px;
 }
 
+.text-modal-funding {
+    font-weight: bold;
+    font-size: 110%;
+    padding-top: 20px;
+}
+
+.modalBodyTitle {
+    padding: 30px;    
+    padding-left: 40px;
+    padding-top: 80px;
+}
+
+.h3-title {
+ padding-bottom: 20px;
+ font-size: 200%;
+ font-weight: bolder;
+}
+
+.comity-title {
+    font-weight: bold;
+}
+
+.text-2, .text-3 {
+    padding-top: 30px;
+}
+
+.title-use-doc {
+    font-size: 100%;
+    padding-bottom: 10%;
+}
+
+.title-contact, .title-help-fund {
+    font-size: 100%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
