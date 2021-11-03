@@ -29,6 +29,8 @@ function ShootingCard({ title }) {
     image: contactImage,
   };
 
+  
+
   return (
     <div className="ShootingCard">
       <ShootingCardItems {...talent} />

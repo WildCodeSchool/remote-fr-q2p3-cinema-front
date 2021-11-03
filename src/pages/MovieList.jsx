@@ -19,6 +19,7 @@ function MovieList() {
             .then((data) => setMovies(data))
     }, [movies])
 
+
     const showModal = id => {
         setOpenModal(id);
     }
@@ -27,27 +28,28 @@ function MovieList() {
         setOpenModal(false);
     }
 
+
     const uniqueGenre = [];
     movies.map(item => {
         const findItem = uniqueGenre.find(x => x.FILM_GENRE === item.FILM_GENRE);
         if (!findItem)
             uniqueGenre.push(item);
     });
-
+ 
     const uniqueDate = [];
     movies.map(item => {
         const findItem = uniqueDate.find(x => x.FILM_ANNEE === item.FILM_ANNEE);
         if (!findItem)
             uniqueDate.push(item);
     });
-
+ 
     const handleChangeGenre = (event) => {
         setGenre(event.target.value)
     };
     const handleChangeDate = (event) => {
         setDate(event.target.value)
     };
-
+ 
     function filterclick() {
         setIsFiltered(true)
         if (genre !== "All" && date === "All") {
@@ -87,16 +89,18 @@ function MovieList() {
                         All
                     </option>
                     {uniqueDate.map(movie => (
+
                         <option>
                             {movie.FILM_ANNEE}
                         </option>
                     ))}
-
+ 
                 </select>
             </label>
             <button onClick={filterclick}>
                 Submit
             </button>
+
             <div className="MovieContent">
                 {movie.map((movie) => (
                     <div key={movie.id} style={{ margin: "10px" }} className="movieCards"> 
@@ -133,6 +137,7 @@ function MovieList() {
                                  <p>Année: {movie.FILM_ANNEE}</p>
                                  <p>Genre: {movie.FILM_GENRE}</p>
                               </div>                                 
+
                         </div>
                         <br />
                     </div>
@@ -161,11 +166,12 @@ function MovieList() {
                         All
                     </option>
                     {uniqueDate.map(movie => (
-
+ 
                         <option>
                             {movie.FILM_ANNEE}
                         </option>
                     ))}
+
                 </select>
             </label>
             <button onClick={filterclick} >
@@ -173,6 +179,7 @@ function MovieList() {
             </button>
             <div className="MovieContent">
                 {movies.slice(0, 8).map(movie => (
+
                     <div key={movie.id} style={{ margin: "10px" }} className="movieCards">
                         <Modal showModal={openModal} hideModal={hideModal} movie={movie}>
                     <div className="Modal">
@@ -207,6 +214,7 @@ function MovieList() {
                                 <p>Année: {movie.FILM_ANNEE}</p>
                                 <p>Genre: {movie.FILM_GENRE}</p>
                               </div>
+
                         </div>
                         <br />
                     </div>
@@ -215,7 +223,8 @@ function MovieList() {
             </div>
         </div>
     }
-
+ 
 }
-
+ 
 export default MovieList;
+ 
