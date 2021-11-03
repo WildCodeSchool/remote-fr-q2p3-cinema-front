@@ -3,7 +3,7 @@ import './ShootingTurn.css'
 import ShootingTurnCard from './ShootingTurnCard'
 import togetherImage from '../assets/together.jpg'
 import tournageImage from '../assets/tournage.jpg'
-import portraitImage from '../assets/tournage.jpg'
+import portraitImage from '../assets/photo.jpg'
 
 
 function ShootingTurn() {
