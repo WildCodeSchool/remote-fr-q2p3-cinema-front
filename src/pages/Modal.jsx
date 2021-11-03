@@ -12,4 +12,5 @@ const Modal = ({ showModal, hideModal, children, movie}) => {
     )
 }
 
+
 export default Modal
