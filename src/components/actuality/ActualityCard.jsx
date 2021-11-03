@@ -26,7 +26,7 @@ function ActualityCard() {
   return (
     <div className="ActualityList">
       <div className="actuality-container">
-      <h3 className="section-title ActualityList-title">ACTUALITES A LA UNE</h3>
+      <h3 className="section-title ActualityList-title">ACTUALITÉS À LA UNE</h3>
       <div className="cards-container">
         <Actuality {...pic1} />
         <Actuality {...pic2} />

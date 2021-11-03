@@ -6,29 +6,26 @@ import Funding from './Funding';
 function FundingList() {
   const [fundings, setFundings] = useState([]);
   const [openModal, setOpenModal] = useState(null);
-
+ 
   useEffect(() => {
     axios
       .get('http://localhost:8000/api/financements')
       .then((res) => res.data)
       .then((data) => setFundings(data));
   }, []);
-
+ 
   const showModal = (id) => {
     setOpenModal(id);
   };
-
+ 
   const hideModal = () => {
     setOpenModal(false);
   };
-
+ 
   return (
     <div className="Logo">
       <Logo />
-
-      <div className="FundingList">
-
-        <div className="Funding">
+      <div className="Funding">
           <div className="funding-text">
             <div className="Funding-page"> Accueil Financer votre projet</div>
             <h1 className="funding-main-title">
@@ -45,18 +42,19 @@ function FundingList() {
               prennent la forme de bourses d'écriture.
             </h4>
           </div>
-          <div className="funding-columns-container">
-          {fundings.map((funding) => (
+        </div>
+ 
+      <div className="FundingList">
+        {fundings.map((funding) => (
           <div key={funding.id}>
-            <button onClick={() => showModal(funding.id)}>open</button>
+            <div className="funding-column" onClick={() => showModal(funding.id)}>{funding.FIN_FORMATS}</div>
             <Funding
               showModal={openModal}
               hideModal={hideModal}
               funding={funding}
             >
-              <div className="modalHeader"></div>
               <div className="modalBodyTitle">
-                <h3>LONG MÉTRAGE</h3>
+                {/* <h3>LONG MÉTRAGE</h3>
                 <div className="text-modal-funding">
                   {' '}
                   Ce fond répond à des modalités pratiques des aides à
@@ -66,51 +64,36 @@ function FundingList() {
                   convetion de partenariat avec le Centre national du cinéma et
                   de l'image animée (CNC) et son définies par le cadre
                   d'intervention adopté par la Région.
-                </div>
+                </div> */}
               </div>
-              <div className="modalBody">
-                <h1 className="funding-title"></h1>
-                <p>{funding.FILM_FORMAT}</p>
+              <div className="modalBodyFin">
+                <div className="wrapper">
+                <p>{funding.FIN_FORMATS}</p>
+                <p>{funding.FIN_DESCRIPTIF}</p>
+                <div className="contact-funding">
+                   
+                  <p>{funding.FIN_CONTACT}</p>
+                <p>{funding.FIN_MAIL}</p>
+                <p>{funding.FIN_TELEPHONE}</p>
+                </div>
+                <p>{funding.FIN_WEB}</p>
+                <p>{funding.FIN_COMMUNE_INSEE}</p>
+                <p>{funding.FIN_COMMUNE}</p>
+                <p>{funding.FIN_INTERCO}</p>
+                <p>{funding.FIN_DEPT}</p>
+                <p>{funding.FIN_REGION}</p> 
+                <div className="faq-button">FAQ</div>
+                <button className="close">x</button>
+              </div>
               </div>
               <div className="modalFooter">
-                <button className="modalBtn">Fermer</button>
               </div>
             </Funding>
           </div>
         ))}
-            <div className="first-funding-column-container">
-              <div className="funding-column animation-column">Animation</div>
-              <div className="funding-column short-film-column">
-                Court-métrage
-              </div>
-              <div className="funding-column documentary-column">
-                Documentaire
-              </div>
-            </div>
-            <div className="second-funding-column-container">
-              <div className="funding-column long-film-column">
-                Long-métrage
-              </div>
-              <div className="funding-column television-fiction-column">
-                Fiction Télévisée
-              </div>
-            </div>
-            <div className="third-funding-column-container">
-              <div className="funding-column web-creation-column">
-                Web-création
-              </div>
-              <div className="funding-column works-column">
-                Oeuvres immersives ou intéractives
-              </div>
-              <div className="funding-column project-column">
-                Projets groupés
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
 }
-
+ 
 export default FundingList;

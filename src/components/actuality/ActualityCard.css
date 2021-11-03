@@ -18,9 +18,8 @@
 .ActualityList-title {
     font-size: 180%;
     font-weight: bold;
-    text-align: left;
-    margin-left: 9%;
-    margin-bottom: 1%;
+    margin-left: 430px;
+    margin-bottom: 20px;
 }
 
 .link-actuality {
@@ -30,3 +29,7 @@
     margin-left: 22%;
 }
 
+.actuality-container {
+   display: flex;
+   flex-direction: column;
+}

@@ -1,46 +1,84 @@
-.Funding {
-    text-align: left;
-    margin-left: 6%;
-    margin-right: 8%;
+.FundingList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-top: 2%;
+  width: 80%;
 }
 
-.funding-text {
-    margin-left: 6%;
-   
+.Funding {
+  margin-left: 15%;
+  margin-right: 10%;
+  width: 80%;
 }
 
 .Funding-page {
-    margin-top: 2%;
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
-.funding-second-title {
-    margin-top: 2%;
-    margin-bottom: 2%;
+.funding-main-title {
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
-.funding-columns-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-top: 6%;
-    justify-content: center;
+.faq-button {
+    border-radius: 20px;
+    width: 15%;
+    background-color: rgb(211, 211, 211);
 }
 
 .funding-column {
-    background-color: rgb(189, 188, 188);
-    width: 28%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(211, 211, 211);
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 60px;
+  font-size: 120%;
+  cursor: pointer;
 }
 
-.first-funding-column-container, .second-funding-column-container, .third-funding-column-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 6%;
-    font-weight: bold;
-    width: 800px;
-    height: 200px;
+.modalBodyFin {
+  width: 20vw;
+  height: 20vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
+
+.wrapper {
+    height: 700px;
+    width: 1000px;
+    background:#FFFF;
+    border: solid 1px black;
+    color: black;
+    position: absolute;
+    top: 260%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 180%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin : 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
