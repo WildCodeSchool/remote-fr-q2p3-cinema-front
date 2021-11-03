@@ -87,7 +87,6 @@ function MovieList() {
                         All
                     </option>
                     {uniqueDate.map(movie => (
-
                         <option>
                             {movie.FILM_ANNEE}
                         </option>
@@ -103,28 +102,28 @@ function MovieList() {
                     <div key={movie.id} style={{ margin: "10px" }} className="movieCards"> 
                          <Modal showModal={openModal} hideModal={hideModal} movie={movie}>
                     <div className="Modal">
-                        <div className="modalHeader">
+                            <div className="modalHeader">
                             <h2>{movie.FILM_TITRE}</h2>
                             <img className="modal-img" src={BacImg} all="Bac Nord" />
                             <video controls currentTime={11.3} src={BacVid} />
-                        </div>
+                            </div>
                             <div className="modalBody">
                             <h3>Fiche Technique</h3>
                             <p className="p1">Réalisateur: {movie.FILM_REALISATEUR}</p>
                             <p>Producteur:{movie.FILM_PRODUCTEUR}</p> 
                             <p className="p1">Commune: {movie.FILM_COMMUNE}</p>
-                            <p>Année :{movie.FILM_ANNEE}</p>
+                            <p>Année : {movie.FILM_ANNEE}</p>
                             <p className="p1">Genre: {movie.FILM_GENRE}</p>
                             <p>Format: {movie.FILM_FORMAT}</p>
                             <h3 className="modal-subventions">Subventions</h3>
                             <div className="modal-subventions-details">
                             <p className="p1">Type: {movie.SUBVENTION_TYPEAIDE}</p>
-                            <p>Année:{movie.SUBVENTION_ANNEE}</p>
-                            <p className="p1">Montant région: {movie.SUBVENTION_MONTANT_REGION}</p>
-                            <p>Budget prévisionnel: {movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}</p>
+                            <p>Année: {movie.SUBVENTION_ANNEE}</p>
+                            <p className="p1">Montant région: {movie.SUBVENTION_MONTANT_REGION}€</p>
+                            <p>Budget prévisionnel: {movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}€</p>
                             </div>
                             </div>
-                            <button className="modalBtn">Fermer</button>
+                            <button className="modalBtn">X</button>
                     </div>    
                         </Modal>                       
                         <div className="MovieCard">
@@ -194,11 +193,11 @@ function MovieList() {
                             <div className="modal-subventions-details">
                             <p className="p1">Type: {movie.SUBVENTION_TYPEAIDE}</p>
                             <p>Année: {movie.SUBVENTION_ANNEE}</p>
-                            <p className="p1">Montant région: {movie.SUBVENTION_MONTANT_REGION}</p>
-                            <p>Budget prévisionnel: {movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}</p>
+                            <p className="p1">Montant région: {movie.SUBVENTION_MONTANT_REGION}€</p>
+                            <p>Budget prévisionnel: {movie.SUBVENTION_BUDGETPREVISIONNEL_FILM}€</p>
                             </div>
                             </div>
-                            <button className="modalBtn">Fermer</button>
+                            <button className="modalBtn">X</button>
                     </div>    
                         </Modal> 
                         <div className="MovieCard">
