@@ -1,4 +1,54 @@
-.overlay {
+.FundingList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 14%;
+  margin-top: 2%;
+  width: 80%;
+}
+
+.Funding {
+  margin-left: 15%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+.Funding-page {
+  margin-bottom: 2%;
+}
+
+.funding-main-title {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-align: left;
+}
+
+.faq-button {
+    border-radius: 60px;
+    background-color: rgb(211, 211, 211);
+    font-size: 160%;
+    position: absolute;
+    right: 120px;
+    bottom: 50px;
+    padding: 15px;
+    width: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.funding-column {
+  background-color: rgb(211, 211, 211);
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 60px;
+  font-size: 120%;
+  cursor: pointer;
+}
+
+.modalBodyFin {
     position: absolute;
     top: 0;
     left: 0;
@@ -7,25 +57,97 @@
 }
 
 .wrapper {
-    height: 600px;
-    width: 700px;
-    background: grey;
+    background:#FFFF;
+    color: black;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    text-align: left;
+    flex-direction: row-reverse;
+    height: 90vh;
+    width: 80vw;
+    top: 100%;
+    left: 54%;
     transform: translate(-50%, -50%);
-}
-
-.wrapper p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    display: flex;
+    border : 1px rgb(134, 134, 134) solid;
 }
 
 .close {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 10px;
+    top: 10px;
+    font-size: 300%;
+    padding: 4px;
+    border: none;
+    background: none;
+    color: grey;
+}
+
+.second-modal-part {
+    width: 70%;
+    padding: 10px;
+}
+
+.props-content {
+    width: 30%;
+    position: relative;
+    padding: 40px;
+    padding-top: 110px;
+    padding-right: 60px;
+    color: rgb(92, 92, 92);
+}
+
+.props-funding {
+    margin-bottom: 2%;
+}
+
+.second-text-modal {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;  
+    padding-left: 40px;
+}
+
+.text-modal-funding {
+    font-weight: bold;
+    font-size: 120%;
+    padding-top: 20px;
+}
+
+.modalBodyTitle {
+    padding: 30px;    
+    padding-left: 40px;
+    padding-top: 80px;
+}
+
+.h3-title {
+ padding-bottom: 20px;
+ font-size: 200%;
+ font-weight: bolder;
+}
+
+.comity-title {
+    font-weight: bold;
+    color: black;
+}
+
+.text-2, .text-3 {
+    padding-top: 30px;
+    color: rgb(92, 92, 92);
+}
+
+.text-1 {
+    color: rgb(92, 92, 92);
+}
+
+.title-use-doc {
+    font-size: 100%;
+    padding-bottom: 10%;
+    color: black;
+}
+
+.title-contact, .title-help-fund {
+    font-size: 100%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    color: black;
 }

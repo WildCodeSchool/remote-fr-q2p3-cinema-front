@@ -2,29 +2,34 @@
     width: 100%;
 }
 
-.ActualityList-title {
-    text-align: left;
-    margin-bottom: 2%;
-}
-
 .cards-container {
     display: flex;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .Actuality-social-media {
     display: flex;
     justify-content: center;
-    border: 2px solid black;
-    margin: 10px;
 }
 
 .ActualityList-title {
-    margin-left: 4%;
     font-size: 180%;
     font-weight: bold;
+    margin-left: 430px;
+    margin-bottom: 20px;
 }
 
+.link-actuality {
+    text-align: right;
+    margin-bottom: 1%;
+    margin-right: 22%;
+    margin-left: 22%;
+}
+
+.actuality-container {
+   display: flex;
+   flex-direction: column;
+}

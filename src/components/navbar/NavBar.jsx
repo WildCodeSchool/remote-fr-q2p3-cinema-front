@@ -15,11 +15,11 @@ function NavBar() {
         <Link className="navigation-link" to="/Funding">
           FINANCER VOTRE PROJET
         </Link>
-        <p className="separation"></p>
+        <div className="separation"></div>
         <Link className="navigation-link" to="/Shooting">
           TOURNER EN REGION
         </Link>
-        <p className="separation"></p>
+        <div className="separation"></div>
         <Link className="navigation-link" to="/Movies">
           FILMS SOUTENUS
         </Link>

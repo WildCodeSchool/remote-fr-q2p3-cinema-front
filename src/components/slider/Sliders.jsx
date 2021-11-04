@@ -8,6 +8,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
 
+/*function SampleNextArrow(props) {
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
@@ -43,7 +44,8 @@ function SamplePrevArrow(props) {
       onClick={onClick}
     />
   );
-}
+}*/
+
 
 function Sliders() {
   const settings = {
@@ -52,14 +54,19 @@ function Sliders() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 6500,
+    autoplaySpeed: 5500,
     pauseOnHover: true,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    /*nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,*/
   };
   return (
     <div className="Slider">
       <div className="image-container-carousel">
+        <h1 className="title-carousel">
+          Votre portail Région Sud<p>Cinéma Audiovisuel</p>
+        </h1>
+        <div className="greetings-carousel">François Lefebvre / France TV
+        </div>
         <Slider {...settings}>
           <div className="slide">
             <img className="image" alt="image1" src={image1} />
