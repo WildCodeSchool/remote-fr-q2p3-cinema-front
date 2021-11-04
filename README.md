@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with `git clone` and `npm install`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone your repository with git clone. 
+
+Install the dependencies with npm install in your.
 
 ## Available Scripts
 
@@ -68,3 +70,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Dependencies to install
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-elastic-carousel": "^0.11.5",
+    "react-icons": "^4.3.1",
+    "react-responsive-carousel": "^3.2.21",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^1.1.2"
+    
+## Project contributors
+
+Project 3 Wild  -  Cinéma Région sud 
+
+Anne MARZIALE - Benjamin BONNET  - Yoann MAULINE - Karim KAMELI - Chrisophe MICHAUD
