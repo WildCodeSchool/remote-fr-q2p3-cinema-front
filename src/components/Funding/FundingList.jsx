@@ -3,6 +3,8 @@ import './FundingList.css';
 import axios from 'axios';
 import Logo from './Logo';
 import Funding from './Funding';
+import { Link } from 'react-router-dom';
+
 function FundingList() {
   const [fundings, setFundings] = useState([]);
   const [openModal, setOpenModal] = useState(null);
@@ -22,6 +24,7 @@ function FundingList() {
     setOpenModal(false);
   };
 
+  let iconStyles = {color: "black" }
   return (
     <div className="Logo">
       <Logo />
@@ -64,13 +67,18 @@ function FundingList() {
                     <h2 className="title-use-doc">DOCUMENTS UTILES</h2>
                     {/* <p className="props-funding">{funding.FIN_FORMATS}</p> */}
                     <p className="props-funding">{funding.FIN_STRUCTURE}</p>
-                    <h2 className="title-help-fund">DEMANDE D'AIDE FINANCIERE</h2>
+                    <h2 className="title-help-fund">
+                      DEMANDE D'AIDE FINANCIERE
+                    </h2>
                     <p className="props-funding">{funding.FIN_DESCRIPTIF}</p>
-                      <p className="props-funding">{funding.FIN_CONTACT}</p>
-                      <p className="props-funding">{funding.FIN_TELEPHONE}</p>
-                      <p className="props-funding">{funding.FIN_MAIL}</p>
-                      <h2 className="title-contact">CONTACT</h2>
-                    <p className="props-funding funding-email"> Email :  {funding.FIN_WEB}</p>
+                    <p className="props-funding">{funding.FIN_CONTACT}</p>
+                    <p className="props-funding">{funding.FIN_TELEPHONE}</p>
+                    <p className="props-funding">{funding.FIN_MAIL}</p>
+                    <h2 className="title-contact">CONTACT</h2>
+                    <p className="props-funding funding-email">
+                      {' '}
+                      Email : {funding.FIN_WEB}
+                    </p>
                     <p className="props-funding">{funding.FIN_COMMUNE_INSEE}</p>
                     <p className="props-funding">{funding.FIN_COMMUNE}</p>
                     <p className="props-funding">{funding.FIN_INTERCO}</p>
@@ -93,12 +101,16 @@ function FundingList() {
                     <div className="second-text-modal">
                       <p className="text-1">
                         <p className="comity-title">1# Comité de lecture</p>
-                        <p>Date limite de dépôt des dossiers : 30 septembre 2019</p>
-                           Date du comité de lecture : 12 décembre 2020
+                        <p>
+                          Date limite de dépôt des dossiers : 30 septembre 2019
+                        </p>
+                        Date du comité de lecture : 12 décembre 2020
                       </p>
                       <p className="text-2">
                         <p className="comity-title">2# Comité de lecture</p>
-                        <p>Date limite de dépôt des dossiers : 30 janvier 2020</p>
+                        <p>
+                          Date limite de dépôt des dossiers : 30 janvier 2020
+                        </p>
                         Date du comité de lecture : 25 mars 2020
                       </p>
                       <p className="text-3">
@@ -106,11 +118,12 @@ function FundingList() {
                         <p>Date limite de dépôt des dossiers : 30 avril 2020</p>
                         Date du comité de lecture : 6 juillet 2020
                       </p>
-
                     </div>
                   </div>
-                  <div className="faq-button">FAQ</div>
-                  <button className="close">x</button>
+                  <Link to={{pathname:'/faq'}} style={iconStyles}>
+                    <div className="faq-button">FAQ</div>
+                  </Link>
+                  <button className="close">×</button>
                 </div>
               </div>
               <div className="modalFooter"></div>
