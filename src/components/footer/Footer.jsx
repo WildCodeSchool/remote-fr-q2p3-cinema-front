@@ -52,7 +52,7 @@ function Footer() {
               <li>Logo Région Sud</li>
               <li>Recrutement</li>
               <li>Gestion des cookies</li>
-              <Link className="about-footer" to={{ pathname:'/about'}} style={iconStyles}>
+              <Link className="about-footer" to={{pathname:'/about'}} style={iconStyles}>
               À Propos
               </Link>
             </ul>

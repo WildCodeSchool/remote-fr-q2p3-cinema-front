@@ -24,7 +24,7 @@ function FundingList() {
     setOpenModal(false);
   };
 
-  let iconStyles = {color: "black" }
+  let iconStyles = {color: "rgb(92, 92, 92)", textDecoration: "none" }
   return (
     <div className="Logo">
       <Logo />
@@ -73,6 +73,9 @@ function FundingList() {
                     <p className="props-funding">{funding.FIN_DESCRIPTIF}</p>
                     <p className="props-funding">{funding.FIN_CONTACT}</p>
                     <p className="props-funding">{funding.FIN_TELEPHONE}</p>
+                    <Link to={{pathname:'/faq'}} style={iconStyles}>
+                    <p>Demande d'aide financière</p>
+                    </Link>
                     <p className="props-funding">{funding.FIN_MAIL}</p>
                     <h2 className="title-contact">CONTACT</h2>
                     <p className="props-funding funding-email">
@@ -120,9 +123,7 @@ function FundingList() {
                       </p>
                     </div>
                   </div>
-                  <Link to={{pathname:'/faq'}} style={iconStyles}>
                     <div className="faq-button">FAQ</div>
-                  </Link>
                   <button className="close">×</button>
                 </div>
               </div>

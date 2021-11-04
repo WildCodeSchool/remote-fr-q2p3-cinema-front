@@ -2,6 +2,7 @@ import React, {useEffect,useState} from 'react';
 import axios from 'axios';
 import FaqCards from './FaqCards';
 import './FaqCards.css';
+import Logo from '../Funding/Logo';
 
 function Faq() {
 
@@ -16,6 +17,7 @@ function Faq() {
     }, [])
     return (
         <div className="Faq">
+            <Logo />
             {faqs.map((faq, index) => 
              <div key={index}> 
               <FaqCards faq={faq} />

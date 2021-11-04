@@ -3,7 +3,6 @@ import React from 'react';
 function FaqCards({faq}) {
     return ( 
 
-
     <div className="table-header">
 
         <div className="header-container">
