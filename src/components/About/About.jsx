@@ -8,7 +8,7 @@ function About() {
             <Logo />
             <h1 className="title-about">À Propos</h1>
             <div className="about-content">
-                Ce projet à été créer par la Wild Code School ....
+                Ce projet à été créer par les élèves Wild Code School Christophe Michaud, Yoann Mauline, Karim Kameli, Benjamin Bonnet et Anne Marziale.
             </div>
         </div>
     )

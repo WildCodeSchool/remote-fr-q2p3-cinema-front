@@ -8,45 +8,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Slider.css';
 
-/*function SampleNextArrow(props) {
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{
-        ...style,
-        display: 'block',
-        right: '1%',
-        zIndex: '1',
-        opacity: '1',
-        color: 'White',
-      }}
-      onClick={onClick}
-    />
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      jk
-      style={{
-        ...style,
-        display: 'block',
-        left: '1%',
-        zIndex: '1',
-        opacity: '1',
-        color: 'White',
-      }}
-      onClick={onClick}
-    />
-  );
-}*/
-
-
 function Sliders() {
   const settings = {
     dots: false,
@@ -54,10 +15,8 @@ function Sliders() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5500,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
-    /*nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,*/
   };
   return (
     <div className="Slider">

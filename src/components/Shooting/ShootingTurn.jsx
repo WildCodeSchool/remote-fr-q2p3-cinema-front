@@ -9,17 +9,17 @@ import portraitImage from '../assets/photo.jpg'
 function ShootingTurn() {
 
     const together = {
-        title: "ça s'est tourné près de chez moi",
+        title: "Ça s'est tourné près de chez vous",
         lien: 'filmfrance.net',
         image: togetherImage,
       }
     const tournage = {
-        title: "évisionnel des tournages",
-        image: tournageImage
+        title: "Tableau prévisionnel des tournages",
+        image: tournageImage,
     }
     const portrait = {
         title: "Interviews",
-        lien: "seances-specieales.fr",
+        lien: "séances-speciales.fr",
         image: portraitImage
     }
 
